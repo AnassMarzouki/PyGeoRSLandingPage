@@ -38,7 +38,8 @@ p {
 }
 
 .subheading {
-    width: 80vw;
+    padding-left: 10%;
+    padding-right: 10%;
     color: #fafafa;
     font-weight: 900;
     margin-bottom: 0.5em;

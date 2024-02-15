@@ -1,0 +1,232 @@
+body {
+    background-color: #202020;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fafafa;
+    margin:0px;
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: #252525 1px 0px 1px;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin-top: 0.167rem;
+    margin-bottom: 0.167rem;
+
+}
+
+p {
+    text-align: left;
+    font-size: 1.125rem;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+
+    line-height: 1.35;
+}
+
+.beta-text { 
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.subheading {
+    color: #fafafa;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.top-text {
+    margin:0 auto;
+    order:-1;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+}
+
+/* =================
+    Intro
+   ================= */
+
+/* 
+  Challenge: Style the .intro section
+    - Convert into a flex container; 
+      display its content in a column
+    - Set a minimum height of 250px
+    - Center-align its content
+    - Vertically center the content
+    - Remove the space around the edges of the page
+*/
+
+.intro { 
+    background-image: url('images/intro-bg.png');
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    min-height: 250px;
+    align-content: center;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #9480e4;
+    background-size: cover;
+    padding-top: 1.5em;
+}
+
+/* ====================
+    Main content
+   ==================== */
+.main-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.img-main {
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+
+/* =================
+    Form
+   ================= */
+form {
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 0.60em;
+}
+
+input {
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+    padding: 0.2em;
+    box-sizing: border-box;
+
+}
+
+input:focus {
+    border: 2px solid #8a71ec;
+    background-color: #e6e8ec;
+    border-radius: 5px;
+
+}
+
+.btn {
+    border: none;
+    background-color:#a898e7;
+    color:white;
+    padding: 0.4em;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color:#8a71ec;
+}
+
+/* =================
+    Media queries 
+   ================= */
+.social-links {
+    display: flex;
+    gap : 0.4em;
+}
+.social {
+    font-family: inherit;
+    font-weight: bold;
+    color:rgb(34, 34, 34);
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 0.2em;
+    border-radius: 5px;
+}
+
+.social:hover {
+    font-family: inherit;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(69, 164, 247);
+    padding: 0.2em;
+    border-radius: 5px;
+}
+
+   .downloads {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    text-align: center;
+    margin-bottom: 0.4em;
+    font-family: inherit;
+    font-size: larger;
+    text-decoration: none;
+    padding: 0.3em;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: rgb(54, 47, 163);
+    border: 1px solid black;
+
+}
+
+.link:hover {
+    font-weight: 600;
+    color: whitesmoke;
+    background-color: rgb(3, 112, 3);
+   
+}
+
+@media (min-width:576px){
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .intro, .main-content {
+        min-height: 100vh;
+        width:50%
+    }
+
+    .main-content {
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 2.625rem;
+    }
+
+    .beta-text {
+        font-size: 1.25rem;
+    }
+
+    .main-content, p, form {
+        max-width: 600px;
+    }
+
+    .downloads {
+        display: flex;
+        flex-direction: row;
+        gap: 0.7em;
+    }
+}

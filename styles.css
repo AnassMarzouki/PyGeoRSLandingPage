@@ -34,9 +34,11 @@ p {
 .beta-text { 
     font-weight: 900;
     text-transform: uppercase;
+    margin-bottom: 0.5em;
 }
 
 .subheading {
+    width: 80vw;
     color: #fafafa;
     font-weight: 900;
     margin-bottom: 0.5em;
@@ -76,7 +78,7 @@ p {
     align-content: center;
     justify-content: space-between;
     color: #fff;
-    background-color: #9480e4;
+    background-color: #3000f1;
     background-size: cover;
     padding-top: 1.5em;
 }
@@ -144,6 +146,7 @@ input:focus {
 .social-links {
     display: flex;
     gap : 0.4em;
+    margin-bottom: 1em;
 }
 .social {
     font-family: inherit;
